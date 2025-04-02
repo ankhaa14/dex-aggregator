@@ -1,0 +1,19 @@
+# Environment variables
+.env
+
+# Node modules
+/artifacts
+/cache
+/node_modules
+
+# Cache and temporary files
+.cache/
+dist/
+build/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db

@@ -1,7 +1,8 @@
 const { ethers } = require("hardhat");
 require("dotenv").config();
 
-const provider = ethers.provider;
+// const provider = ethers.provider;
+const provider = new ethers.JsonRpcProvider(process.env.BUILDBEAR_URL);
 
 const sushiswapFactoryAddress = "0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac";
 

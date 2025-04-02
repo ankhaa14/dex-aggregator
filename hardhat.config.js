@@ -15,6 +15,10 @@ module.exports = {
     mainnet: {
       url: process.env.MAINNET_RPC_URL,
       accounts: [process.env.PRIVATE_KEY],
-    }
+    },
+    buildbear: {
+      url: process.env.BUILDBEAR_URL, 
+      accounts: [process.env.PRIVATE_KEY], 
+    },
   },
 };
