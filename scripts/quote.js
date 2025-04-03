@@ -1,15 +1,20 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const contractAddress = "0x9C6930D56dF4F32aF6Bd870042D3b1faafd27535";
+  const contractAddress = "0x138A2e27FcE83f0E86ea126360be44A41867Cb7b";
   const DataFetcher = await ethers.getContractAt("SushiswapDataFetcher", contractAddress);
-  
-  // Example: simulate converting 1 WETH (1e18 wei) to USDC.
+
   const amountIn = ethers.parseUnits("1", 18);
   const amountOut = await DataFetcher.getWethToUsdcAmountOut(amountIn);
+  console.log("Estimated USDC output for 1 WETH:", ethers.formatUnits(amountOut, 6));
+
+  const reserves = await DataFetcher.getPoolReserves();
+  const reserveWETH = reserves[0];
+  const reserveUSDC = reserves[1];
   
-  // Assuming USDC has 6 decimals:
-  console.log("Estimated USDC output:", ethers.formatUnits(amountOut, 6));
+  console.log("Pool Reserves:");
+  console.log("WETH Reserve:", ethers.formatUnits(reserveWETH, 18));
+  console.log("USDC Reserve:", ethers.formatUnits(reserveUSDC, 6));
 }
 
 main()
@@ -18,3 +23,4 @@ main()
     console.error("Interaction failed:", error.message);
     process.exit(1);
   });
+
