@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/ankhjargalankhbayar/Desktop/dex-aggregator/contracts/sushi.sol": {
-      "lastModificationDate": 1743549155336,
-      "contentHash": "752bad0d2372b5ded1a3c109e4c854a6",
+      "lastModificationDate": 1743556019701,
+      "contentHash": "5be210468bda89ede28b2fadd54dfc2d",
       "sourceName": "contracts/sushi.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -37,6 +37,42 @@
         "IUniswapV2Factory",
         "IUniswapV2Pair",
         "SushiswapDataFetcher"
+      ]
+    },
+    "/Users/ankhjargalankhbayar/Desktop/dex-aggregator/contracts/test.sol": {
+      "lastModificationDate": 1743616986097,
+      "contentHash": "543c95b1ba919a7dbf1848323ba0c7b3",
+      "sourceName": "contracts/test.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "HelloBuildbear"
       ]
     }
   }
