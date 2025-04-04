@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
-- npm (or yarn)
+- npm 
 - [Hardhat](https://hardhat.org/)
 - An RPC endpoint URL (e.g., from Buildbear) configured in your `.env` file
 - A private key with sufficient balance on the network
