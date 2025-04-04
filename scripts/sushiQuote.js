@@ -1,7 +1,7 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const contractAddress = "0x138A2e27FcE83f0E86ea126360be44A41867Cb7b";
+  const contractAddress = "0xCB4a15852033345dd1BF6f31E106Cc9F24368ADE";
   const DataFetcher = await ethers.getContractAt("SushiswapDataFetcher", contractAddress);
 
   const amountIn = ethers.parseUnits("1", 18);
