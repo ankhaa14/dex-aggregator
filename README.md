@@ -1,4 +1,4 @@
-# DEX Aggregator - Sushiswap Data Fetcher
+# DEX Aggregator 
 
 ## Prerequisites
 
