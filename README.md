@@ -13,7 +13,7 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/ankhaa14/dex-aggregator.git
    cd dex-aggregator
 
 2. **Install Dependencies**
